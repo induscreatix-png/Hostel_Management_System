@@ -1,6 +1,6 @@
 <footer class="site-footer">
 	<div class="site-footer-inner">
-		<p class="site-copyright">&copy; <?php echo date('Y'); ?> Indus Creatix. All rights reserved.</p>
+		<p class="site-copyright">&copy; <?php echo date('Y'); ?> Nayab Hostel. All rights reserved.</p>
 		<p class="site-tagline">Creativity <span>|</span> Innovation <span>|</span> Impact</p>
 	</div>
 	<!-- <button class="site-scroll-top" type="button" aria-label="Scroll to top">

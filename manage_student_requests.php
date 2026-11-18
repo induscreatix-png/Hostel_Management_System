@@ -307,7 +307,7 @@ function requestActions($type, $id) {
 <head>
 	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Student requests | Nayab Hostel</title>
-	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"><link rel="stylesheet" href="web_home/css_home/style.css"><link rel="stylesheet" href="web/css/student-dashboard.css">
+	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"><link rel="stylesheet" href="web_home/css_home/style.css"><link rel="stylesheet" href="web/css/student-dashboard.css"><link rel="stylesheet" href="web/css/staff-dashboard.css?v=1">
 	<style>
 		.request-card { padding:18px 0; border-top:1px solid #edf1f6; }
 		.request-card:first-child { border-top:0; }
@@ -316,7 +316,7 @@ function requestActions($type, $id) {
 		.decision-form { display:flex; flex-wrap:wrap; gap:9px; }
 	</style>
 </head>
-<body class="student-dashboard">
+<body class="student-dashboard staff-dashboard">
 <?php require_once __DIR__ . '/includes/site_chrome.php'; renderSiteHeader(); ?>
 <main class="student-shell dashboard-main">
 	<section class="profile-hero"><div><p class="eyebrow"><?php echo h($manager['Position']); ?></p><h1>Student requests</h1><p><?php echo $isHostelStaff ? 'Review room-change and pass-out requests for your assigned hostel.' : 'Review mess applications for your assigned mess.'; ?></p></div></section>

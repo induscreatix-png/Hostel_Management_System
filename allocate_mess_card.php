@@ -33,6 +33,7 @@ requireManagerAccess($conn, array('Mess Manager'), 'login-hostel_manager.php', '
 	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="web_home/css_home/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
 	<link rel="stylesheet" href="web_home/css_home/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="web/css/staff-dashboard.css?v=1">
 	<!-- //css files -->
 
 	<!-- web-fonts -->
@@ -42,7 +43,7 @@ requireManagerAccess($conn, array('Mess Manager'), 'login-hostel_manager.php', '
 
 </head>
 
-<body>
+<body class="staff-workspace">
 
 <!-- banner -->
 <div class="inner-page-banner" id="home">

@@ -64,13 +64,9 @@ function h($value) {
 	<link rel="stylesheet" href="web_home/css_home/style.css">
 	<link rel="stylesheet" href="web/css/student-dashboard.css">
 	<link rel="stylesheet" href="web/css/admin-dashboard.css">
-	<style>
-		.staff-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
-		.staff-summary .admin-stat { min-width:0; }
-		@media(max-width:760px) { .staff-summary { grid-template-columns:1fr; } }
-	</style>
+	<link rel="stylesheet" href="web/css/staff-dashboard.css?v=1">
 </head>
-<body class="student-dashboard">
+<body class="student-dashboard staff-dashboard">
 <?php require_once __DIR__ . '/includes/site_chrome.php'; renderSiteHeader(); ?>
 <main class="student-shell dashboard-main">
 	<section class="profile-hero">

@@ -65,9 +65,9 @@ function h($value) {
 <head>
 	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Manage complaints | Nayab Hostel</title>
-	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"><link rel="stylesheet" href="web_home/css_home/style.css"><link rel="stylesheet" href="web/css/student-dashboard.css"><link rel="stylesheet" href="web/css/admin-dashboard.css">
+	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"><link rel="stylesheet" href="web_home/css_home/style.css"><link rel="stylesheet" href="web/css/student-dashboard.css"><link rel="stylesheet" href="web/css/admin-dashboard.css"><link rel="stylesheet" href="web/css/staff-dashboard.css?v=1">
 </head>
-<body class="student-dashboard">
+<body class="student-dashboard<?php echo $isAdmin ? '' : ' staff-dashboard'; ?>">
 <?php require_once __DIR__ . '/includes/site_chrome.php'; renderSiteHeader(); ?>
 <main class="student-shell dashboard-main">
 	<section class="profile-hero"><div><p class="eyebrow"><?php echo $isAdmin ? 'ADMINISTRATION' : 'HOSTEL MANAGER'; ?></p><h1>Complaint inbox</h1><p><?php echo $isAdmin ? 'Review and respond to all student complaints.' : 'Review and respond to complaints for your hostel.'; ?></p></div></section>

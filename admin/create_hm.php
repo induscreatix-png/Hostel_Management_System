@@ -31,17 +31,9 @@ function h($value) {
 	<link rel="stylesheet" href="../web_home/css_home/bootstrap.css">
 	<link rel="stylesheet" href="../web/css/student-dashboard.css">
 	<link rel="stylesheet" href="../web/css/admin-dashboard.css">
-	<style>
-		.staff-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
-		.staff-form-grid .full { grid-column:1 / -1; }
-		.staff-assignment[hidden] { display:none; }
-		.staff-table { min-width:900px; }
-		.staff-remove { margin:0; }
-		.role-pill { display:inline-block; padding:5px 9px; border-radius:20px; background:#eaf3fa; color:#1769aa; font-size:12px; font-weight:700; white-space:nowrap; }
-		@media(max-width:600px) { .staff-form-grid { grid-template-columns:1fr; } .staff-form-grid .full { grid-column:auto; } }
-	</style>
+	<link rel="stylesheet" href="../web/css/staff-dashboard.css?v=1">
 </head>
-<body class="student-dashboard">
+<body class="student-dashboard staff-access-page">
 <?php require_once __DIR__ . '/../includes/site_chrome.php'; renderSiteHeader(); ?>
 <main class="student-shell dashboard-main">
 	<section class="profile-hero">
@@ -77,7 +69,7 @@ function h($value) {
 			<button class="button" type="submit" name="hm_signup_submit" value="1">Create staff account</button>
 		</form>
 	</section>
-	<section class="panel directory-panel" style="margin-top:20px">
+	<section class="panel directory-panel">
 		<div class="panel-heading"><div><p class="eyebrow">ACCESS DIRECTORY</p><h2>Current staff</h2></div></div>
 		<div class="table-responsive">
 			<table class="table admin-table staff-table">

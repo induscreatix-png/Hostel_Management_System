@@ -95,6 +95,7 @@ if (isset($_POST['submit'])) {
 	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="web_home/css_home/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
 	<link rel="stylesheet" href="web_home/css_home/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="web/css/staff-dashboard.css?v=1">
 	<!-- //css files -->
 
 	<!-- web-fonts -->
@@ -104,7 +105,7 @@ if (isset($_POST['submit'])) {
 
 </head>
 
-<body>
+<body class="staff-workspace">
 
 <!-- banner -->
 <div class="inner-page-banner" id="home">
