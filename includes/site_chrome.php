@@ -11,6 +11,9 @@ function siteChromeContext() {
 		if ($position === 'Mess Manager') {
 			return 'mess_staff';
 		}
+		if ($position === 'Guard') {
+			return 'guard';
+		}
 		return 'hostel_staff';
 	}
 	if (!empty($_SESSION['roll'])) {
@@ -58,6 +61,11 @@ function siteChromeLinks($context) {
 			array('Payment review', 'admin/payments.php', array('payments.php', 'payment_proof.php'))
 		);
 	}
+	if ($context === 'guard') {
+		return array(
+			array('Student movement', 'guard_movement.php', array('guard_movement.php'))
+		);
+	}
 	if ($context === 'student') {
 		return array(
 			array('Home', 'home.php', array('home.php')),
@@ -90,7 +98,7 @@ function renderSiteHeader() {
 	$links = siteChromeLinks($context);
 	$isAdminDirectory = basename(dirname(isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_SELF'] : '')) === 'admin';
 	$currentPage = basename(isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_SELF'] : '');
-	$brandRoute = $context === 'admin' ? 'admin/admin_home.php' : (in_array($context, array('hostel_staff', 'mess_staff'), true) ? 'home_manager.php' : ($context === 'finance' ? 'admin/payments.php' : 'home.php'));
+	$brandRoute = $context === 'admin' ? 'admin/admin_home.php' : (in_array($context, array('hostel_staff', 'mess_staff'), true) ? 'home_manager.php' : ($context === 'finance' ? 'admin/payments.php' : ($context === 'guard' ? 'guard_movement.php' : 'home.php')));
 	?>
 	<header class="site-header">
 		<div class="site-header-inner">

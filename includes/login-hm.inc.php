@@ -55,6 +55,8 @@ if ((int)$manager['Isadmin'] === 1) {
 	header('Location: ../admin/admin_home.php');
 } elseif ($_SESSION['position'] === 'Finance Reviewer') {
 	header('Location: ../admin/payments.php');
+} elseif ($_SESSION['position'] === 'Guard') {
+	header('Location: ../guard_movement.php');
 } else {
 	header('Location: ../home_manager.php');
 }

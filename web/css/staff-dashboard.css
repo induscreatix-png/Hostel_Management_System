@@ -99,7 +99,7 @@ body.staff-dashboard {
 }
 
 .staff-access-page .admin-stats {
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .staff-access-page .admin-stat {
@@ -149,6 +149,23 @@ body.staff-dashboard {
 
 .staff-access-page .directory-panel {
 	margin-top: 20px;
+}
+
+.staff-movement-page .staff-movement-table {
+	min-width: 1050px;
+}
+
+.staff-movement-page .movement-actions {
+	display: flex;
+	gap: 8px;
+}
+
+.staff-movement-page .movement-actions form {
+	margin: 0;
+}
+
+.staff-movement-page .movement-actions .button {
+	white-space: nowrap;
 }
 
 .staff-rooms-page .staff-room-summary {

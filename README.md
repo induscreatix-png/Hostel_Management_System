@@ -13,8 +13,8 @@ A system built for hostel room and mess allocation and management. Implemented u
 After importing `database/hostel_management_system.sql`, run
 `database/student_application_workflow.sql`,
 `database/feature_expansion.sql`, `database/payment_review_workflow.sql`,
-`database/room_capacity_expansion.sql`, and
-`database/staff_role_assignments.sql` against the same database. The room
+`database/room_capacity_expansion.sql`, `database/staff_role_assignments.sql`,
+and `database/guard_movement_tracking.sql` against the same database. The room
 capacity migration adds six rooms to every existing hostel and sets each room
 to hold up to five students. Room allocations and releases update occupancy
 counts, and full rooms are skipped by allocation. Staff-role assignments allow
@@ -39,9 +39,12 @@ paid records without proof are marked for students to resubmit documentation.
 
 Managers can review room-change, pass-out and mess requests. Administrators can
 review and allocate pending hostel room and mess applications from the admin
-dashboard, create staff accounts with Warden, Hostel Manager, Mess Manager, and
-Finance Reviewer positions, and review payment submissions. Finance reviewers
-can review payment submissions.
+dashboard, create staff accounts with Warden, Hostel Manager, Guard, Mess
+Manager, and Finance Reviewer positions, and review payment submissions. Each
+hostel can have one Guard assigned to each of three 8-hour shifts (06:00–14:00,
+14:00–22:00, and 22:00–06:00). Guards can view their assigned hostel's student
+roster and record each student's hostel-out and college-entry time once per day.
+Finance reviewers can review payment submissions.
 
 Room and mess application statuses are `1` (pending), `0` (approved) and `-1`
 (rejected). Payment statuses are `0` (unpaid), `2` (pending review), `1`

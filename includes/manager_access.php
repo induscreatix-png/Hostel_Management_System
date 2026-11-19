@@ -37,7 +37,7 @@ function requireManagerAccess($conn, $allowedPositions, $loginLocation, $adminLo
 		http_response_code(403);
 		exit('Your staff role does not have access to this page.');
 	}
-	if (in_array($manager['Position'], array('Warden', 'Hostel Manager'), true) && empty($manager['Hostel_id'])) {
+	if (in_array($manager['Position'], array('Warden', 'Hostel Manager', 'Guard'), true) && empty($manager['Hostel_id'])) {
 		http_response_code(403);
 		exit('No hostel is assigned to this staff account.');
 	}
